@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 2011, Copyright Luis A. Arce González. JavaDiKt's spanish languaje reference file. Licensed under Creative Commons Attribution-Non Commercial-ShareAlike 3.0 unported(http://creativecommons.org/licenses/by-nc-sa/3.0/)-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="comboBoxElem">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" minOccurs="0"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:NMTOKEN" use="required"/>
+			<xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="button">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="panel" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="comboBox">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="comboBoxElem" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="dinamic" type="xs:boolean" use="required"/>
+			<xs:attribute name="listRef">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[a-zA-z0-9]+(_[a-zA-z0-9]+)*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="defaultSelected" type="xs:positiveInteger"/>
+			<xs:attribute name="editable" type="xs:boolean"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="eventText">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="type" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="token"/>
+								<xs:enumeration value="c_style"/>
+								<xs:enumeration value="html"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="event" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:maxLength value="150"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="label">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+						<xs:enumeration value="extendedKanjiInfo"/>
+						<xs:enumeration value="extendedKanjiList"/>
+						<xs:enumeration value="format"/>
+						<xs:enumeration value="kanjiPath"/>
+						<xs:enumeration value="lang"/>
+						<xs:enumeration value="path"/>
+						<xs:enumeration value="romanizedKana"/>
+						<xs:enumeration value="strokePath"/>
+						<xs:enumeration value="style"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="listText" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="listText">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:NMTOKEN">
+								<xs:maxLength value="40"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="order" type="xs:positiveInteger"/>
+					<xs:attribute name="basic" type="xs:boolean"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="lists">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="list" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="localized">
+		<xs:annotation>
+			<xs:documentation source="WARNING: root of language message system" xml:lang="EN"/>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lists" minOccurs="0"/>
+				<xs:element ref="swingComponents" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="iso639-1_lang" type="xs:NMTOKEN" use="required"/>
+			<xs:attribute name="fullLangName" type="xs:NMTOKEN" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="messages">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="localized" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="program_name" type="xs:string" use="required"/>
+			<xs:attribute name="version" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[1-9]+[0-9]*\.[1-9]+[0-9]*\.[1-9]+[0-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="panel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" minOccurs="0"/>
+				<xs:element ref="panel" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="button" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="table" minOccurs="0"/>
+				<xs:element ref="comboBox" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="label" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="textField" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="swingComponents">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="window" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="javaPackage" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[a-z0-9]+(\.[a-z0-9]+)*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="table">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="tableColumn" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="tableColumn">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" minOccurs="0"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+						<xs:enumeration value="andOr"/>
+						<xs:enumeration value="condition"/>
+						<xs:enumeration value="field"/>
+						<xs:enumeration value="level"/>
+						<xs:enumeration value="mode"/>
+						<xs:enumeration value="orderBy"/>
+						<xs:enumeration value="value"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="order" type="xs:positiveInteger" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="text">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="type" use="required">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="html"/>
+								<xs:enumeration value="c_style"/>
+								<xs:enumeration value="token"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="textField">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" minOccurs="0"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="window">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="text" minOccurs="0"/>
+				<xs:element ref="eventText" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="panel" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute name="name" type="xs:NMTOKEN" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

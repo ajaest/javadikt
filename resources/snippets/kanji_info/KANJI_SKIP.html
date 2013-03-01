@@ -1,0 +1,11 @@
+<h2><a NAME="_Código_SKIP"></a>Código SKIP</h2>
+"<b>S</b>ystem of <b>K</b>anji <b>I</b>ndexing by <b>P</b>atterns", o sistema de indexación de kanjis por patrones es un método de catalogación expuesto por Jack Halpern, en su <a href="http://books.google.es/books?id=8b65Dog7a_8C&amp;printsec=frontcover&amp;dq=New+Japanese-English+Character+Dictionary&amp;hl=es&amp;ei=unWWTJi5#v=onepage&amp;q&amp;f=false" target="_blank"><i>New Japanese-English Character Dictionary</i></a>. En él, cada kanji queda representado de forma no unívoca(es decir, el código puede ser igual en varios kanjis) por un código de tipo “<b>i-j-k</b>”.
+<br><br>El código “i” viene dado por la forma del kanji. La mayoría de ellos suelen tener lo que podemos considerar “<u>un centro de gravedad</u>” que diferencia a dos conjuntos de trazos/radicales espacialmente y que, generalmente, son <b>no conexos o no se cruzan</b>. Si la diferencia es <b>izquierda-derecha</b>, i=1, si es <b>arriba-abajo</b>, i=2; y si es <b>núcleo-envoltura</b>, i=3. En caso de que, por ejemplo, todos los trazos/radicales sean conexos o se crucen, o el kanji sea de simetría tal que <b>no permita diferenciar ninguno de los casos anteriores</b>, i=4.
+<br><br>Si <b>i es igual a 1,2 o 3</b>, “j” es el número de trazos de la parte izquierda/superior/envoltura y “k” es el número de trazos de la parte derecha/inferior/núcleo.
+<br><br>Por el contrario, si <b>i es igual a 4</b>, “j” será el número total de trazos del kanji y “k” dependerá de si tiene una línea horizontal en la parte superior (k=1), si la tiene en la parte inferior (k=2), si tiene una línea vertical en el centro (k=3) o ninguna de las anteriores (k=4).
+<br><br>Lo bueno de este método es que no requiere conocimientos sobre radicales, solo saber contar trazos y reconocer el centro de gravedad, que suele ser fácil. 
+Algunos ejemplos:
+<br><br>行　1-3-3　引　1-3-1　相　1-4-5　時　1-4-6　八　1-1-1　噛　1-3-12
+<br>学　2-5-3　見　2-5-2　京　2-2-6　分　2-2-2　二　2-1-1　字　2-3-3　春　2-5-4.
+<br>気　3-4-2　週　3-3-8　広　3-3-2　問　3-8-3　国　3-3-5　月　3-2-2　通　3-3-7
+<br>下　4-3-1　西　4-6-1　士　4-3-2　自　4-6-2　中　4-4-3　事　4-8-3　火　4-4-4　女　4-3-4

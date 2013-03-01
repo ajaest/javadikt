@@ -1,0 +1,64 @@
+<h2><a NAME="_Lectura"></a>Lectura</h2>
+Los kanjis japoneses tienen principalmente dos clasificaciones para sus lecturas: las <b>lecturas “kun”</b> y las <b>lecturas “on”</b>. Estos nombres categorizan a las lecturas según sus fonemas procedan del japonés o del chino respectivamente.<br><br>
+Cuando la literatura, la ciencia y la tecnología china entraron en Japón (lo cual incluye a los kanjis), también lo hicieron cientos de palabras de origen chino que en japonés simplemente no existían. Así que lo que hicieron los japoneses fue elegir kanjis para representar sus propias palabras, conservando sus lecturas chinas para palabras que en su idioma no existían. Por ejemplo, en chino Shanghái, la ciudad, se escribe 上海, que se pronuncia “shan-hai”, cuyos kanjis significan tanto en chino como en japonés “encima” y “mar” respectivamente. Los japoneses conservaron la pronunciación “Shanhai” para el nombre de la ciudad, convirtieron la pronunciación de “hai” del segundo kanji en “kai” para otras palabras (como 日本海, “ni-hon-kai” o “mar de Japón”) y asignaron además al kanji la palabra japonesa para mar, ”umi”. Por tanto, las lecturas “on” o chinas de este kanji son “hai” y “kai”, y la lectura “kun” o japonesa es “umi”.<br><br>
+En la mayoría de los casos, aunque con muchísimas excepciones, las palabras de origen japonés suelen estar representadas por un solo kanji y las de origen chino por una composición de éstos. Por lo general es más fácil aprender las pronunciaciones kun de los kanjis porque los vocablos japoneses son más largos y variados que los chinos. Éstos últimos tienden a ser monosílabos y de sonidos alargados, como “shou”, “ryou” o “sei”, de forma que se repiten mucho entre los kanjis. Mientras tanto, los japoneses tienden a ser de dos sílabas con algún fonema fuerte, como “umi”, “sakura”, “kome” o “mado”.<br><br>
+Ocurre muy comúnmente que leemos un kanji del cual conocemos su lectura kun, pero no recordamos su lectura “on”, o no sabemos cuál de sus lecturas on se utiliza en esa palabra en concreto. Buscar en este tipo de casos un kanji por su pronunciación (sobre todo si es kun) suele ser bastante efectivo, aún teniendo en cuenta que el número de palabras homónimas en japonés es enorme.<br><br>
+Otra cosa interesante sobre las lecturas es que, en muchas ocasiones, kanjis compuestos por otros kanjis suelen heredar entera o parcialmente las lecturas “on” de sus radicales. Este hecho es especialmente útil cuando sobre la marcha tenemos que hacer suposiciones sobre cómo se lee una palabra que no entendamos.<br><br>
+Cabe resaltar también que existe otro tipo de lecturas, <b>las lecturas “nanori”</b>, que son pronunciaciones de kanjis generalmente procedentes del japonés y ya en desuso que siguen usándose para leer nombres. La curiosidad en torno a este tipo de lecturas es que en un registro estatal japonés solo está registrado como se escribe tu nombre, no que pronunciación de cada kanji usa. Esto da libertad a los japoneses de elegir según las lecturas de los kanjis que conforman su nombre como quieren que se pronuncien, posibilitando cambios de significado y juegos de palabras.<br><br>
+<b>Aclaración</b>: es común en muchas publicaciones escribir las lecturas “On” de un kanji en katakana y las lecturas “Kun” y “Nanori” en hiragana. Así es como están almacenadas las lecturas en JavaDiKt, lo que significa que cualquier búsqueda de, por ejemplo, una lectura “On” escribiéndola en hiragana será infructífera.<br><br>
+<b>Uso</b>: es conveniente que siempre se añada a un criterio de lectura mediante “Y” un criterio de “Tipo de lectura”, especialmente si queremos diferenciar las lecturas kun de las lecturas nanori. Si no, la búsqueda podría devolver todos los kanjis que tienen cierta lectura, sea nanori, kun u on.<br><br>
+<b>Ejemplos</b>:<br><br>
+-Buscar kanjis cuya lectura kun sea “かう”<br><br>
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Lectura</td>
+		<td>igual que</td>
+		<td>かう</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Tipo de lectura</td>
+		<td>igual que </td>
+		<td>kun-yomi</td>
+	</tr>
+</table><br><br>
+-Buscar kanjis cuya lectura on sea “ショウ”<br><br>
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Lectura</td>
+		<td>igual que</td>
+		<td>ショウ</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Tipo de lectura</td>
+		<td>igual que </td>
+		<td>on-yomi</td>
+	</tr>
+</table><br><br>
+-Buscar kanjis cuya lectura sea “かう”, sin importar si es nanori, on, o kun<br><br>
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Lectura</td>
+		<td>igual que</td>
+		<td>かう</td>
+	</tr>
+</table><br><br>
+-Buscar kanjis del grado 1 que tengan lectura on<br><br>
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Grado</td>
+		<td>igual que</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Tipo de lectura</td>
+		<td>igual que</td>
+		<td>On-yomi</td>
+	</tr>
+</table>

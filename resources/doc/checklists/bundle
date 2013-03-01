@@ -1,0 +1,7 @@
+01.- Modify Mac launcher's info.plist version attribute(CFBundleVersion and CFBundleShortVersionString)
+02.- Use Launch4j to edit windows's JavaDiKt.xml launcher information file and update Version attribute. Generate window's .exe file 
+03.- Execute make.sh
+04.- Add manual and change name to 「manual.html」
+05.- Check that config.xml does not exists in config folder
+06.- Remove .svn folders
+06.- Zip

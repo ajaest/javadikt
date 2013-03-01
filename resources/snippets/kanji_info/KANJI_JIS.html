@@ -1,0 +1,80 @@
+<h2><a NAME="_Código_Jis_Kuten"></a>Código Jis Kuten</h2>
+
+La agencia japonesa de estandarización(<a href="http://en.wikipedia.org/wiki/Japanese_Industrial_Standards" target="_blank">JIS</a>) mediante su especificación <a href="http://en.wikipedia.org/wiki/JIS_X_0208" target="_blank">JIS X 208:1997</a> define una lista de 6879 kanji, caracteres katakana, caracteres hiragana y algunos caracteres de otros idiomas como inglés, ruso o griego . La especificación define una tabla de referencias, de forma que cada carácter se identifica por su fila y columna dentro de esa tabla, usando para cada una dos dígitos de la forma “ff-cc”, siendo “ff” la fila y “cc” la columna.<br><br>
+
+La lista fue ampliada con el estándar <a href="http://en.wikipedia.org/wiki/JIS_X_0212" target="_blank">JIS X 212:1990</a>, que incluía 6067 caracteres más y que hoy en día está prácticamente en desuso en favor del estándar <a href="http://en.wikipedia.org/wiki/JIS_X_0213" target="_blank">JIS X 213:2004</a>, que extiende también al estándar JIS X 208 con todos los caracteres contenidos en el JIS X 212 más 952, lo que suman 11233.<br><br>
+
+El estándar JIS X 213 codifica los caracteres de otra manera, pues divide el conjunto completo en dos planos, donde cada plano es una tabla. Así, la codificación queda de la forma “p-ff-cc”. Dado que los caracteres de JIS X 208 están contenidos en el plano uno, convertir de JIS X 208 a JIS X 212 es tan fácil como añadir un uno delante, quedando “1-ff-cc”.<br><br>
+
+<b>Aclaración</b>: el estándar definitivo japonés sobre la codificación de kanjis es JIS 213, que incluye en el primer plano, entre otros, todos los caracteres del JIS208, algunos kanjis del JIS212 y los nuevos del propio JIS213 distribuidos entre ambos planos. Así pues, la referencia de código JIS ha de ser interpretada de la siguiente manera:<br><br>
+<ul>
+    <li>Formato “<b>ff-cc</b>”, juego de caracteres <b>JIS208</b>: El kanji está tanto en los estándares JIS208 como JIS213. Su forma para el estándar JIS213 es “1-ff-cc”.</li>
+    <li>Formato “<b>p-ff-cc</b>”, juego de caracteres <b>JIS213</b>: El kanji está en el estándar JIS213, no pertenece a JIS208 y quizás también forma parte del JIS212.</li>
+    <li>Formato “<b>ff-cc</b>”, juego de caracteres <b>JIS212</b>: El kanji pertenece al estándar obsoleto JIS212, pero no fue incluido en el estándar JIS213.</li>
+</ul><br><br>
+
+<b>Uso</b>: para consultas sobre el estándar JIS213 no será necesario, pero si se consulta sobre el estándar JIS208 o JIS212 habrá que añadir necesariamente el criterio “Juego de caracteres JIS” correspondiente.<br><br>
+
+<b>Ejemplos</b>:<br><br>
+
+-Buscar un kanji del JIS208 o del JIS213 que también pertenezca a JIS 208<br><br>
+
+
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Juego de caracteres JIS</td>
+		<td>igual que</td>
+		<td>JIS X 208</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Código JIS kuten</td>
+		<td>igual que </td>
+		<td>38-17</td>
+	</tr>
+</table><br><br>
+
+ -Buscar un kanji del JIS212<br><br>
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Juego de caracteres JIS</td>
+		<td>igual que</td>
+		<td>JIS X 212</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Código JIS kuten</td>
+		<td>igual que </td>
+		<td>38-17</td>
+	</tr>
+</table><br><br>
+
+ -Buscar un kanji del estandar JIS213 (y que no pertenece al JIS208)<br><br>
+
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Código JIS kuten</td>
+		<td>igual que </td>
+		<td>2-38-17</td>
+	</tr>
+</table><br><br>
+
+-Buscar todos los kanjis del estandar JIS213<br><br>
+
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Juego de caracteres JIS</td>
+		<td>igual que</td>
+		<td>JIS X 208</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Juego de caracteres JIS</td>
+		<td>igual que</td>
+		<td>JIS X 213</td>
+	</tr>
+</table>

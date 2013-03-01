@@ -1,0 +1,8 @@
+<h2><a NAME="_Código_Spahn-Hadamitzky"></a>Código Spahn-Hadamitzky</h2>
+El código <b>Spahn-Hadamitzky</b> es un método de búsqueda de kanjis propuesto en el diccionario <a href="http://books.google.es/books?id=D5bIdSRcADwC&amp;printsec=frontcover&amp;dq=spahn+Hadamitzky&amp;hl=es&amp;ei=nHWWTLiEHoLHswagubBk&amp;sa=X&amp;oi=book#v=onepage&amp;q&amp;f=false" target="_blank"><i>The Kanji Dictionary</i></a>, de Mark Spahn y Wolfgang Hadamitzky. Se basa en la búsqueda del radical y la referenciación, por lo que requiere más preparación que otros métodos como SKIP.<br><br>
+
+Dado un kanji, identificamos su radical principal y contamos su número de trazos, que será el primer elemento de la clave. Luego vamos a <a href="http://www.hadamitzky.de/images/79radicals-variants.jpg" target="_blank">esta tabla</a>(sin variantes) o a <a href="http://www.hadamitzky.de/images/79radicals+variants.jpg" target="_blank">ésta</a>(con variantes) e identificamos el kanji por el número de trazos, obteniendo una letra, que será el segundo elemento de la clave. Finalmente, contamos el número de trazos no pertenecientes al radical y lo añadimos al final, obteniendo así el código no unívoco que identifica el kanji.<br><br>
+
+En el diccionario The Kanji Dictionary, el código se convierte en unívoco al recibir secuencialmente sin usar ningún criterio en particular números a partir del 1 todos los kanjis pertenecientes al mismo grupo. Algunos ejemplos:<br><br>
+
+十　2k0.1　遅　2q9.17　師　3f7.2　則　7b2.1　貨　7b4.5

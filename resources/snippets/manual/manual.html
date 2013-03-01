@@ -1,0 +1,568 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- The following keys must be replaced
+			($version) 		** Program version
+			($project) 		** Program project
+			($resourceUri)	** Default URI where resources like images are stored 
+	WARNING: This document is a snippet, lacks of html and body close tags 
+-->
+<html>
+<head>
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+<meta http-equiv="CONTENT-LANGUAJE" content="es-ES">
+
+<meta name="Description" content="The JavaDiKt project, Manual">
+<meta name="Copyright" content="Luis Alfonso Arce González">
+<meta name="Author" content="Luis Alfonso Arce González, javadikt@ajaest.net">
+<meta name="License" content="Creative Commons Attribution-ShareAlike 2.5">
+
+<title>Manual de JavaDiKt ($project) ($version)</title>
+</head>
+<body lang="es-ES">
+<!-- Analytics, edited by ajaest --> 
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21395894-2']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> 
+<!-- End of analitycs -->
+<div>
+<p style="margin-top: 0cm; margin-bottom: 0.5cm"><i>Manual de JavaDiKt ($project) ($version)</i></p>
+</div>
+
+<br>
+<br>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/3.0.png" align="BOTTOM"
+	width="169" border="0"><br>
+</p>
+<p align="CENTER"><b>Manual de JavaDiKt (</b><b>($project) ($version)</b><b>)</b></p>
+<pre style="text-align: center"><b>Copyright Luis A. Arce, Licenciado bajo Creative Commons Attribution-ShareAlike 2.5</b></pre>
+<br>
+<br>
+
+<div dir="LTR">
+<div dir="LTR">
+<p
+	style="margin-top: 0.42cm; margin-bottom: 0.21cm; page-break-before: always; page-break-after: avoid"><b>Tabla
+de contenidos</b></p>
+</div>
+<p style="margin-top: 0cm; margin-bottom: 0cm"><a href="#_1.Manejo_del_programa">1.Manejo
+del programa</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_La_interfaz_del_programa">La interfaz del programa</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_El_panel_de_control">El panel de control</a></p>
+<p style="margin-left: 1cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_El_panel_de_búsqueda_por_criterio">El panel de búsqueda por criterio</a></p>
+<p style="margin-left: 1cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_El_panel_de_búsqueda_por_grafo">El panel de búsqueda por grafo</a></p>
+<p style="margin-left: 1.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_La_representación_de_kanjis_según_el_modelo_grafo-asterisco">La representación de
+kanjis según el modelo grafo-asterisco</a></p>
+<p style="margin-left: 1.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Buscando_kanjis_mediante_su_trazo">Buscando kanjis mediante su trazo</a></p>
+<p style="margin-left: 1.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Combinando_búsquedas_mediante_criterios_y_grafos">Combinando búsquedas mediante
+criterios y grafos</a></p>
+<p style="margin-left: 1cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_El_panel_de_exportación_de_búsqueda">El panel de exportación de búsqueda</a></p>
+<p style="margin-left: 1cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_El_panel_de_opciones">El panel de opciones</a></p>
+<p style="margin-left: 1cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_La_ventana_de_infomación">La ventana de infomación</a></p>
+<p style="margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_2.Significado_de_los_campos_de_los_kanjis">2.Significado de los campos de los kanjis</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Código_Jis_Kuten">Código
+Jis Kuten</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Código_SKIP">Código
+SKIP</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Código_Spahn-Hadamitzky">Código Spahn-Hadamitzky</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Código_cuatro_esquinas">Código cuatro esquinas</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Código_de_Roo">Código
+de Roo</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Frecuencia">Frecuencia</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Grado">Grado</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Grafo_Asterisco">Grafo
+Asterisco</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Juego_de_caracteres_JIS">Juego de caracteres JIS</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Kanji">Kanji</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Lectura">Lectura</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Nivel_JLPT">Nivel
+JLPT</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Nombre_del_diccionario">Nombre del diccionario</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Número_de_trazos">Número
+de trazos</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Radical_clásico">Radical
+clásico</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Referencia_de_la_variante">Referencia de la variante</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a
+	href="#_Referencia_del_diccionario">Referencia del diccionario</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Significado">Significado</a></p>
+<p style="margin-left: 0.5cm; margin-top: 0cm; margin-bottom: 0cm"><a href="#_Unicode">Unicode</a></p>
+</div>
+<pre style="margin-bottom: 0.5cm"></pre>
+
+<hr>
+<h1 style="page-break-before: always"><a NAME="_1.Manejo_del_programa"></a> 1.Manejo del
+programa</h1>
+<h2><a NAME="_La_interfaz_del_programa"></a>La interfaz del programa</h2>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/interfaz.png"
+	align="BOTTOM" width="690" border="0"><br>
+</p>
+<p>La interfaz de javaDiKt se divide en dos partes:</p>
+<ul>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm">La parte lateral izquierda (rodeada en verde) es
+	el panel de control. La interacción entre el usuario y el programa se produce principalmente desde
+	esta zona. Desde aquí se pueden realizar búsquedas por grafo, por composición de criterios,
+	exportar la búsqueda actual y cambiar la configuración del programa.</p>
+	</li>
+	<li>
+	<p>La parte lateral derecha (rodeada en rojo) es el panel de resultados. En este panel
+	aparecerán los resultados de las búsquedas y podrá accederse a la información específica de cada
+	Kanji simplemente pinchando sobre él. El botón "Cerrar todas las ventanas" cerrará todas las
+	ventanas abiertas de información, ya sean de <u>kanjis</u>, <u>radicales</u> o <u>orden de
+	trazos</u>.</p>
+	</li>
+</ul>
+<p></p>
+<h2 style="page-break-before: always"><a NAME="_El_panel_de_control"></a>El panel de control</h2>
+<p>El control del programa del programa vienen separada en cuatro paneles accesibles mediante
+pestañas.</p>
+<h3><a NAME="_El_panel_de_búsqueda_por_criterio"></a>El panel de búsqueda por criterio</h3>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Pestaña_Criterio.png"
+	align="BOTTOM" width="372" border="0"><br>
+<span STYLE="font-size: 9pt;">Pestaña criterio</span></p>
+<p align="CENTER"></p>
+<p align="LEFT">Desde el panel de búsqueda por criterio, accesible desde la pestaña "<b>Criterio</b>"
+pueden construirse las descripciones o "queries" que nos sirven para localizar un <u>kanji</u> o <u>grupo
+de kanjis</u> en concreto. Consta principalmente de tres paneles:</p>
+<ol>
+	<li>
+	<p align="LEFT" style="margin-top: 0cm; margin-bottom: 0cm">El <b>cuadro de construcción de
+	búsquedas</b>, que nos permite añadir nuevas descripciones para la búsqueda. Está compuesto por tres
+	menús desplegables y dos botones:</p>
+	<p align="LEFT" style="margin-top: 0cm; margin-bottom: 0cm"></p>
+	<ol>
+		<li>
+		<p align="LEFT" style="margin-top: 0cm; margin-bottom: 0cm"><a></a> El menú desplegable "<b>campo</b>"
+		sirve para <u>elegir la característica del kanji que nos servirá para buscarlo</u>. Puede
+		obtenerse una breve explicación del significado del campo pulsando el botón "?" a la derecha del
+		menú desplegable(<i>sólo si está habilitado</i>) o consultando la sección "<a
+			href="#_2.Significado_de_los_campos_de_los_kanjis"><i><u>Significado de los campos de
+		los kanjis</u></i></a>").</p>
+		<li>
+		<p align="LEFT" style="margin-top: 0cm; margin-bottom: 0cm">El menú desplegable "<b>cumple</b>",
+		elegiremos la <u>relación que debe cumplir el campo elegido con respecto a un valor</u> que
+		podremos elegir o escribir en el tercer menú, el de "<b>valor</b>".</p>
+		<li>
+		<p align="LEFT" style="margin-top: 0cm; margin-bottom: 0cm">El tercer menú es el de "<b>valor</b>".
+		El menú "valor" será desplegable o editable en función de la opción elegida en el menú "campo". En
+		este menú, <u>podemos elegir la característica que tendrá que cumplir el campo elegido</u>.</p>
+		<li>
+		<p style="margin-top: 0cm; margin-bottom: 0cm">Los botones "<b>Añadir/Y</b>" y "<b>Ó</b>"
+		sirven para <u>añadir el criterio a la lista</u> de búsqueda una vez elegido.</p>
+		<p style="margin-top: 0cm; margin-bottom: 0cm"></p>
+	</ol>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm">La <b>lista de búsqueda</b>, que describe la
+	búsqueda actual, y el panel de modificación de búsqueda, que permite modificar la búsqueda actual.
+	En éste último hay tres botones:</p>
+	<p style="margin-top: 0cm; margin-bottom: 0cm"></p>
+	<ol>
+		<li>
+		<p style="margin-top: 0cm; margin-bottom: 0cm"><b>"Reset</b>": <u>borra la lista de
+		búsqueda</u> poniéndola en blanco.</p>
+		<li>
+		<p style="margin-top: 0cm; margin-bottom: 0cm">"<b>Borrar Entradas</b>": <u>borra las
+		entradas seleccionadas</u>(una a una o varias a la vez seleccionando con CTRL+botón izquierdo o
+		SHIFT+botón izquierdo).</p>
+		<li>
+		<p style="margin-top: 0cm; margin-bottom: 0cm">"<b>Modificar</b>": <u>modifica la primera
+		entrada seleccionada</u>. Al pulsar modificar, la entrada será modificada al pulsar de nuevo los
+		botones "Y"/"Añadir" o "Ó" del cuadro de construcción con los valores actuales de los menús
+		desplegables de "campo", "cumple" y "valor". Puede cancelar la modificación pulsando de nuevo
+		"Modificar".</p>
+		<p style="margin-top: 0cm; margin-bottom: 0cm"></p>
+	</ol>
+	<li>
+	<p>El botón "<b>Buscar</b>" borra todos los kanjis del panel de búsqueda pertenecientes a la
+	búsqueda anterior y <u>ejecuta la búsqueda actual</u>, presentando todos aquellos que cumplen las
+	condiciones definidas en la lista de búsqueda.</p>
+</ol>
+<p>El proceso de búsqueda de un kanji consiste, en definitiva, en añadir una serie de frases al
+panel de búsqueda que juntas conforman una expresión en lenguaje natural que define un kanji o grupo
+de kanjis. Supongamos que buscamos los kanjis que cumplen la siguiente frase:</p>
+<blockquote>Buscar el/los kanji/s tal que su número de trazos sea 11 o 12 y que su
+lectura sea "ショウ".</blockquote>
+<p>Esta frase puede expresarse de dos maneras en JavaDiKt:</p>
+<ul>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm">Buscar el/los kanjis/s tal que <i><b>[</b>su
+	<span style="color: red"><u>número de trazos</u></span> sea <span style="color: GoldenRod"><u>mayor
+	que</u></span> <span style="color: DodgerBlue"><u>11</u></span><b>]</b></i> <b>y</b> que <i><b>[</b>su <span
+		style="color: red"><u>número de trazos</u></span> sea <span style="color: GoldenRod"><u>menor
+	que</u></span> <span style="color: DodgerBlue"><u>12</u></span><b>]</b></i> <b>y</b> que <i><b>[</b>su <span
+		style="color: red"><u>lectura</u></span> sea <span style="color: GoldenRod"><u>igual
+	que</u></span> <span style="color: DodgerBlue"><u>"ショウ"</u></span><b>]</b></i>.</p>
+	<li>
+	<p>Buscar el/los kanji/s tal que <i><b>[</b>su <span style="color: red"><u>número
+	de trazos</u></span> sea <span style="color: GoldenRod"><u>igual que</u></span> <span
+		style="color: DodgerBlue"><u>11</u></span><b>]</b></i> <b>y</b> que su <i><b>[</b><span
+		style="color: red"><u>lectura</u></span> sea <span style="color: GoldenRod"><u>sea
+	igual</u></span> que <span style="color: DodgerBlue"><u>"ショウ"</u></span><b>]</b></i> <b>o</b> <span
+		style="BACKGROUND-COLOR: LightGray">que <i><b>[</b>su <span style="color: red"><u>número
+	de trazos</u></span> sea <span style="color: GoldenRod"><u>igual que</u></span> <span
+		style="color: DodgerBlue"><u>12</u></span><b>]</b></i> y <i><b>[</b> su <span style="color: red"><u>lectura</u></span>
+	sea <span style="color: GoldenRod"><u>igual que</u></span> <span style="color: DodgerBlue"><u>"ショウ"</u></span><b>]</b></i></span>.</p>
+</ul>
+<p>Ambas descripciones pueden introducirse en JavaDiKt si vamos añadiendo uno a uno los
+estamentos separados por "<b>y</b>" o "<b>o</b>", donde el texto en rojo se selecciona en el menú
+desplegable de "<b>campo</b>", el amarillo en el de "<b>cumple</b>" y se escribe el texto en azul en
+el de "<b>valor"</b>.</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/lista_de_búsqueda.png"
+	align="BOTTOM" width="690" border="0"><br>
+<span STYLE="font-size: 9pt;">Buscando lo mismo de dos formas distintas</span></p>
+<p>Las dos descripciones son iguales y su búsqueda devolverá los mismos resultados. La
+diferencia fundamental entre las dos búsquedas es que la primera describe una serie de condiciones
+que al ejecutarse devolverá <u>un único conjunto de kanjis</u> que las cumpla, mientras que en en la
+segunda se hacen dos búsquedas (la del del texto con fondo blanco y la del texto con fondo gris) y <u>se
+unen los resultados</u>. Al igual que en el ejemplo, JavaDiKt también distingue las disyunciones en la
+lista de búsqueda dividiendo a los conjuntos de entradas por colores, donde entradas contiguas con
+el mismo color limitan el número de resultados y entradas contiguas con distinto color aumentan el
+número de resultados.</p>
+<h3 style="page-break-before: always"><a NAME="_El_panel_de_búsqueda_por_grafo"></a>El panel de
+búsqueda por grafo</h3>
+<p>Desde el panel de búsqueda por grafo pueden añadirse a la lista de búsqueda condiciones para
+buscar kanjis a través de su dibujo o forma.</p>
+<h4><a NAME="_La_representación_de_kanjis_según_el_modelo_grafo-asterisco"></a>La
+representación de kanjis según el modelo grafo-asterisco</h4>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Grafo_asterisco.png"
+	align="BOTTOM" width="192" border="0"><br>
+<span STYLE="font-size: 9pt;">Lineas posibles en una representación grafo-asterisco</span></p>
+<p align="CENTER"></p>
+<p>El modelo grafo-asterisco es una forma de representar un kanji según el orden de dibujo de
+sus lineas y trazos. En él, se divide a cualquier tipo de trazo en un conjunto posible de 8 tipos de
+líneas según las direcciones de un asterisco, asignándole a cada una una letra de la A a la H. Por
+ejemplo, la línea tipo G empieza va desde la parte inferior derecha hasta la parte superior
+izquierda, mientras que la de tipo C va de la parte superior izquierda hasta la parte inferior
+derecha. El tipo E representa un punto y generalmente no se usa.</p>
+<p>Así pues el primer paso para representar un kanji mediante el modelo grafo-asterisco es <u>separarlo
+ordenadamente por líneas</u> que se trazarían sin levantar la mano del papel, y luego <u>convertir
+cada trazo en un conjunto de líneas asterisco</u>. La primera línea de cada trazo se pone en mayúsculas
+y el resto en minúsculas.</p>
+<p>La representación grafo-asterisco obvia la posición relativa de los trazos entre sí, pero
+hace necesario conocer su orden. JavaDiKt usa internamente este tipo de representación para manejar
+las búsquedas relacionadas con grafos, e incluso es posible desde la ventana de criterio buscar
+kanjis directamente por su cadena grafo-asterisco.</p>
+<p>Por ejemplo, consideremos el kanji de cuatro, 四, la forma de obtener su cadena
+grafo-asterisco sería:</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/ejemploGrafo.png"
+	align="BOTTOM" width="457" border="0"><br>
+<br>
+</p>
+<h4 style="page-break-before: always"><a NAME="_Buscando_kanjis_mediante_su_trazo"></a>Buscando
+kanjis mediante su trazo</h4>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/pestañaGrafo.png"
+	align="BOTTOM" width="450" border="0"><br>
+<span STYLE="font-size: 9pt;">Pestaña de búsqueda por grafo</span></p>
+<p align="CENTER"></p>
+<p>Desde la pestaña "<b>Trazos</b>" podemos añadir criterios sobre kanjis a la lista de búsqueda
+usando el modelo grafo-asterisco. Para ello dibujaremos en el panel de dibujo(arriba a la izquierda)
+el kanji a buscar <u>usando líneas rectas con el ratón</u>. Si pulsamos con el <b>botón
+izquierdo</b> en alguna parte del panel, indicaremos el punto de partida de una línea recta, que acabará
+al pulsar de nuevo el <b>botón derecho</b> en otro punto del panel. Si hemos iniciado el dibujo de
+una línea y <b>volvemos a pulsar el botón izquierdo</b> en vez del derecho, la línea acabará en el
+punto del panel donde el botón ha sido pulsado y una nueva línea empezará en dicho punto. <b>Mientras
+sigamos pulsando el botón izquierdo</b> en vez del derecho iremos encadenando líneas hasta que pulsemos
+el botón derecho.</p>
+<p><u>Una línea o serie de líneas que empiecen en un punto del panel pulsando primero el
+botón izquierdo y finalmente el botón derecho serán interpretadas por el programa como un trazo</u>. Así
+pues, cuando se pulse el botón "<b>Añadir</b>"/"<b>Y</b>" o "<b>Ó</b>" del panel "<b>Añadir
+búsqueda</b>" los trazos serán convertidos por orden de escritura en una cadena de trazos
+grafo-asteriscos, y añadidos a la lista de búsqueda <u>siempre con la condición "igual que"</u>.</p>
+<p>Podemos modificar el dibujo actual usando tanto el ratón como los botones del panel
+"Modificar"</p>
+<ul>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm">Botón "<b>Borrar dibujo</b>" o <b>botón
+	central</b> o <b>botón del scroll </b>del ratón sobre el panel de dibujo: borra completamente el panel
+	de dibujo <u>dejándolo en blanco</u>.</p>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm">Botón "<b>Borrar última línea</b>" o <b>giro
+	del scroll del ratón hacia abajo</b> sobre el panel de dibujo: <u>borra en orden inverso al
+	dibujado la última linea pintada</u>, pertenezca o no al dibujo de un trazo. Esto quiere decir, por
+	ejemplo, que si la última línea pintada pertenece a un trazo de tres líneas, al girar el scroll del
+	ratón este trazo pasará a tener dos líneas, que serán la penúltima y la antepenúltima. <u>Cualquier
+	nueva línea dibujada en este punto pertenecerá a un nuevo trazo</u>.</p>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm"><b>Giro del scroll hacia arriba</b> sobre el
+	panel de dibujo: reconstruye la última línea borrada y la añade al trazo al que pertenecía. Esto
+	significa, por ejemplo, que si teníamos un trazo de tres líneas y borramos y recuperamos una, el
+	trazo seguirá teniendo tres líneas.</p>
+	<li>
+	<p>Botón "<b>Borrar último trazo</b>": borra el último grupo de líneas que conformaba un trazo.</p>
+</ul>
+<h4><a NAME="_Combinando_búsquedas_mediante_criterios_y_grafos"></a>Combinando búsquedas
+mediante criterios y grafos</h4>
+<p>Supongamos que hacemos un dibujo en el panel de dibujo y pulsamos el botón "<b>Añadir</b>" y
+después "<b>Buscar</b>", de forma que en la lista de búsqueda haya una sola entrada. En el panel de
+resultados aparecerá una lista de kanjis cuyo representación en grafo-asterisco <u>sea similar</u>
+al del kanji dibujado. Para el ejemplo del kanji anterior, el de 四, después de ejecutar quedaría la
+pantalla siguiente:</p>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Búsqueda_por_grafo.png"
+	align="BOTTOM" width="640" border="0"><br>
+<br>
+</p>
+<p>JavaDiKt ha devuelto los kanjis cuya representación grafo-asterisco se parece más al del
+kanji dibujado, que ha sido traducido desde el cuadro de dibujo a la lista de búsqueda como "<i>Grafo
+asterisco igual que BFbBaBfhF</i>". Si cambiamos ahora a la pestaña de criterio, podremos comprobar que
+la <u>lista de búsqueda entre ambas ventanas se conserva</u>, lo que significa que podemos hacer
+combinaciones entre búsquedas por criterios y por grafos para limitar las búsquedas. Podemos
+añadirle, por ejemplo, que además su significado sea igual que "cuatro", refinando así aún más la
+búsqueda.</p>
+<p align="CENTER"></p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce"
+	src="($resourceUri)/Combinando_búsqueda_por_grafo_y_criterio.png" align="BOTTOM" width="639"
+	border="0"><br>
+<br>
+</p>
+<h3 style="page-break-before: always"><a NAME="_El_panel_de_exportación_de_búsqueda"></a>El
+panel de exportación de búsqueda</h3>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Exportar.png"
+	align="BOTTOM" width="658" border="0"><br>
+<span STYLE="font-size: 9pt;">Interfaz de exportación</span></p>
+<p align="CENTER"></p>
+<p>Desde el panel de exportación de búsqueda, en la pestaña "<b>Exportar</b>", <u>pueden
+exportarse todos o parte de los kanjis</u> que estén en el panel de búsqueda <u>ordenados automática
+o manualmente</u> según distintos estilos y formatos. El objetivo de esta pestaña es que el usuario
+pueda exportar los resultados de sus búsquedas usando varios estilos y formatos para que, por
+ejemplo, pueda usarlos en otros programas, puedan ser impresos o subidos a una página web.</p>
+<p>Cuando la pestaña "<b>Exportar</b>" está <b>activa</b>, <u>el panel de resultados de
+kanjis se convierte en panel de selección</u>. El <b>primer paso</b> para exportar kanjis es <u>seleccionar
+aquellos kanjis que se van a exportar</u> seleccionándolos desde el panel de búsqueda. Al pulsar el
+botón de un kanji, el color del botón se volverá más oscuro, lo que significará que el kanji está
+seleccionado para la exportación.</p>
+<p>Pueden <b>seleccionarse grupos</b> de marcando primero un kanji con el botón izquierdo, y
+luego otro pulsando <b>SHIFT + botón izquierdo del ratón</b>. Al hacer esto, <u>se invertirá el
+estado de todos los kanjis que forman el cuadrado</u> entre el penúltimo kanji seleccionado y el último
+kanji seleccionado con <b>SHIFT + botón izquierdo</b> del ratón, lo que significa que los kanjis que
+estén activados dentro del botón se desactivarán y viceversa.</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Ejemplo_Selección.png"
+	align="BOTTOM" width="484" border="0"><br>
+<span STYLE="font-size: 9pt;">Ejemplo de seleccón del panel de exportación. Se selecciona
+primero un kanji con el botón izquierdo y luego otro con SHIFT + botón izquierdo. La selección de
+los kanjis dentro del cuadrado es invertida.</span></p>
+<p>Desde el panel de la parte inferior del panel de resultados puede modificarse también los
+kanjis seleccionados:</p>
+<ul>
+	<li>
+	<p>El botón "<b>Todos</b>" <u>seleccionará todos</u> los kanjis.</p>
+	</li>
+	<li>
+	<p>El botón "<b>Reset</b>" <u>deseleccionará todos</u> los kanjis.</p>
+	</li>
+	<li>
+	<p>El botón "<b>Invertir</b>" <u>invertirá la selección actual</u>, marcando todos los kanjis
+	deleccionados y desmarcando los seleccionados.</p>
+	</li>
+</ul>
+<p>Una vez seleccionados los kanjis a exportar, elegiremos desde el panel "<b>Exportar como</b>"
+en que <u>formato</u> y que <u>estilo</u> queremos exportarlo. Los formatos admitidos son, de
+momento:</p>
+<ul>
+	<li>
+	<p><b>Archivo de Texto</b>: los kanjis serán exportados a un archivo simple de texto en formato
+	"<i>.txt</i>".</p>
+	</li>
+	<li>
+	<p><b>HTML</b>: los kanjis serán exportados en un fichero "<i>.html</i>" versión 4.01 Strict.</p>
+	</li>
+	<li>
+	<p><b>PDF</b>: los kanjis serán exportados en un fichero "<i>.pdf</i>" cuyo tamaño
+	predeterminado de hoja será A4.</p>
+	</li>
+</ul>
+<p>Los estilos determinan como serán presentados los kanjis dentro del formato especificado. Los
+estilos soportados son, de momento:</p>
+<ul>
+	<li>
+	<p><b>Texto plano</b>: la información de los kanjis será presentada como <u>texto simple</u>
+	formateado de manera tabular.</p>
+	</li>
+	<li>
+	<p><b>Tabla</b>: los kanjis son presentados de manera ordenada en una tabla donde cada columna
+	representa un campo del kanji.<br>
+	</p>
+	<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Exportar-Tabla.png"
+		align="BOTTOM" border="0"><br>
+	<span STYLE="font-size: 9pt;">Resultado de la exportación y ventana "Más..." asociada al
+	estilo <i>Tabla</i></span></p>
+	<p>Las columnas que serán mostradas y su orden pueden ser elegidos una vez haya sido
+	seleccionado el estilo "Tabla" al pulsar el botón "<b> Más..."</b>. Desde la pestaña "Tabla", elija
+	los campos que quiere que sean mostrados en las columnas seleccionándolos de la lista de la derecha
+	y pulsando el botón <b>"&lt;&lt;"</b>, de forma que los elementos seleccionados pasarán a la
+	columna de la izquierda. Puede usar los botones de las flechas para establecer el orden horizontal
+	que ocuparan los elementos seleccionados en la tabla resultante. De la misma manera, puede usar el
+	botón <b>"&gt;&gt;"</b> para dejar de mostrar los campos selecionados de la lista de la derecha.</p>
+	</li>
+	<li>
+	<p><b>Tarjeta de estudio</b>: los kanjis son presentados de manera ordenada en sendas tarjetas
+	de estudio que contienen información básica y fácil de leer sobre los kanjis.<br>
+	</p>
+	<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Exportar-flashcard.png"
+		align="BOTTOM" border="0"><br>
+	<span STYLE="font-size: 9pt;">Resultado de la exportación en estilo <i>Tarjeta de
+	Estudio</i></span></p>
+	</li>
+</ul>
+<p>Después de seleccionar el formato y el estilo de exportación, podrás seleccionar la <u>ruta
+a la cual será exportado el archivo</u> pulsando el botón "<b>…</b>" o escribiéndola en la caja de texto
+a la derecha.</p>
+<p>Desde el panel "<b>Ordenar por</b>" podemos seleccionar <u>de que forma se ordenarán</u> los
+kanjis en el archivo de exportación. Para ello, podremos añadir criterios de ordenación al panel
+pulsando el botón añadir, lo que desplegará el <b>diálogo de ordenación</b>.</p>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Añadir_ordenador.png"
+	align="BOTTOM" width="320" border="0"><br>
+<span STYLE="font-size: 9pt;">Diálogo añadir criterio de ordenación</span></p>
+<p align="CENTER"></p>
+<p>En el primer menú desplegable de "<b>Propiedad</b>" podemos elegir por qué <u>campo de
+los kanjis se usará para ordenarlos</u>. Si es necesaria algún tipo de información extra, esta aparecerá
+en el siguiente menú desplegable.</p>
+<p>En el menú desplegable "<b>Nivel</b>" podemos seleccionar que <u>criterio de ordenación
+se usará si dos kanjis son iguales</u>, es decir, si por ejemplo dos kanjis son iguales según el
+criterio del nivel uno, se elegirá cual irá antes usando el criterio del nivel dos. Usando este menú
+desplegable podemos, además, <u>sustituir un criterio anterior por uno nuevo</u> poniendo como nivel
+del criterio que sustituye el nivel del criterio a sustituir.</p>
+<p>Desde el menú desplegable "<b>Ordenar según</b>" podemos seleccionar la forma en la que serán
+ordenados los kanjis según el campo escogido en el menú desplegable "Propiedad". La forma de
+ordenación "<b>Aleatorio</b>" usará la propiedad elegida para generar una ordenación aleatoria
+inteligente de los kanjis.</p>
+<p>Cada vez que pulsemos el botón "<b>Añadir/Cambiar</b>", un <u>nuevo criterio de
+ordenación será añadido</u> a la lista de criterios de ordenación del panel "<b>Ordenar por</b>".</p>
+<p>Finalmente, y si deseamos refinar un poco más la ordenación, podemos introducir cambios
+manuales de ordenación desde el botón "<b>Reordenar</b>". Al pulsarlo, se desplegará el <b>diálogo
+de reordenación manual</b>.</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Menú_reordenar_-1.png"
+	align="BOTTOM" width="650" border="0"><br>
+<span STYLE="font-size: 9pt;">Diálogo de reordenación manual</span></p>
+<p align="CENTER"></p>
+<p>En el diálogo de reordenación aparecerá una tabla con al menos dos columnas. En la primera,
+aparece el orden que estable el ordenamiento automático elegido para cada uno de los kanjis
+seleccionados, que aparecen en la segunda columna. En el resto de columnas aparecen las propiedades
+que se han seleccionado la tabla de criterio de ordenación ordenadas por niveles.</p>
+<p>Si seleccionamos un kanji o un conjunto de kanjis(ya sea uno a uno pulsando sucesivamente <b>CTRL
++ botón izquierdo</b> o todos los kanjis entre dos kanjis seleccionado el primero con el <b>botón
+izquierdo</b> del ratón y el segundo con <b>SHIFT + botón izquierdo</b>) y pulsamos los botones de "<b>flecha
+arriba</b>" o <b>"flecha abajo</b>", que son los botones de en medio de la parte derecha, subiremos o
+bajaremos una posición al kanji o conjunto de kanjis.</p>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Menú_reordenar_-2.png"
+	align="BOTTOM" width="650" border="0"><br>
+<span STYLE="font-size: 9pt;">Al pulsar el botón &quot;flecha arriba&quot; todo el grupo de
+kanjis sube una posición en la tabla.</span></p>
+<p align="CENTER"></p>
+<p>Si por el contrario, pulsamos los botones "<b>flecha inicio</b>" o "<b>flecha fin</b>" (los
+de los extremos de la parte derecha), desplazaremos el conjunto de kanjis al principio o al final de
+la lista respectivamente.</p>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Menú_reordenar_-3.png"
+	align="BOTTOM" width="637" border="0"><br>
+<span STYLE="font-size: 9pt;">Pulsando el botón &quot;flecha inicio&quot; todo el grupo
+asciende hasta la primera posición.</span></p>
+<p align="CENTER"></p>
+<p>Finalmente, pulsando el botón "<b>Aceptar</b>" la ordenación de exportación <u>será la
+elegida en este panel</u>, en caso contrario, si se pulsa "<b>Cancelar</b>", se descartarán los cambios.</p>
+<p style="margin-left: 1.25cm"><b>¡ATENCIÓN!: si se modifican los criterios de ordenación
+automáticos se perderá la </b><b>cualquier ordenación manual que haya sido hecha anteriormente.</b></p>
+<p>Por último, si pulsamos el botón "<b>Más…</b>" podremos acceder a las <u>opciones
+avanzadas de exportación</u>, generalmente <u>propias del formato y del estilo elegidos</u>.</p>
+<p>Finalmente, el botón "Exportar" generará el archivo de exportación con los kanjis
+seleccionados en el orden seleccionado con las opciones elegidas.</p>
+<h3 style="page-break-before: always"><a NAME="_El_panel_de_opciones"></a>El panel de opciones</h3>
+<p><br>
+</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Pestaña_opciones.png"
+	align="BOTTOM" width="439" border="0"><br>
+<span STYLE="font-size: 9pt;">Panel de opciones</span></p>
+<p align="CENTER"></p>
+<p>Pulsando en la pestaña "Opciones" accedemos al panel de configuración de JavaDiKt. Desde aquí
+podemos:</p>
+<ul>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm">Configurar el <b>idioma</b>.</p>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm"><b>Cambiar el archivo de la base de datos de
+	kanjis</b>. Por defecto siempre será &lt;ruta de instalación&gt; + "/dict/kanjidic.jdk".</p>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm"><b>Cambiar el archivo de la base de datos de
+	trazos</b>. Por defecto siempre será &lt;ruta de instalación&gt; + "/dict/strokedata.txt".</p>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm"><b>Incluir información avanzada en el
+	diálogo de información de kanjis</b>. Si esta opción está marcada, cuando se solicite información sobre
+	un kanji se mostrará <u>la ventana de información avanzada</u> en vez de la ventana de información
+	básica.</p>
+	<li>
+	<p style="margin-top: 0cm; margin-bottom: 0cm"><b>Buscar en lista extendida de kanjis</b>. Si
+	esta opción está marcada, cualquier búsqueda <u>incluirá kanjis menos comunes</u> o de idiomas
+	distintos al japonés.</p>
+	<li>
+	<p><b>Texto kana romanizado</b>. Si esta opción esta marcada, <u>cualquier texto en
+	escritura On o escritura Kun será romanizado</u>.</p>
+</ul>
+<p>Para guardar una configuración se ha de pulsar el botón "Guardar", tras lo cual la interfaz
+del programa se reiniciará con los cambios aplicados.</p>
+<h3 style="page-break-before: always"><a NAME="_La_ventana_de_infomación"></a>La ventana de
+infomación</h3>
+<p>Una vez hayamos realizado una búsqueda, si pulsamos sobre cualquiera de los kanjis del panel
+de resultados desde la pestaña de "Criterio" o de "Trazos" se abrirá la ventana de información del
+kanji. Si la opción "<i><u>Incluir información avanzada en el diálogo de información de
+kanjis</u></i>" de la pestaña Opciones está marcada, se abrirá la ventana de información avanzada mientras
+que en caso contrario se abrirá la ventana con información más resumida.</p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/ExtendidaVSBasica.png"
+	align="BOTTOM" width="690" border="0"><br>
+<span STYLE="font-size: 9pt;">Vista de información básica frente a ventana de información
+extendida</span></p>
+<p align="CENTER"></p>
+<p>Si pulsamos sobre el botón "<b>+</b>" al lado del panel de "<b>Radical</b>" se desplegará la
+<u>ventana de información de radical</u>, donde se muestran todas las formas posibles en las que
+puede presentarse el radical del kanji en cuestión.</p>
+<p align="CENTER"></p>
+<p align="CENTER"><img alt="Copyright Luis A. Arce" src="($resourceUri)/Ventana_Radical.png"
+	align="BOTTOM" width="613" border="0"><br>
+<span STYLE="font-size: 9pt;">Ventana de información de radical</span></p>
+<p style="margin-top: 0cm; margin-bottom: 0cm">De la misma manera, si pulsamos el botón "<b>S</b>"
+en la esquina inferior derecha del cuadro superior izquierdo, al lado del literal del kanji, se
+desplegará la <u>ventana de información de orden de trazos</u>.</p>
+<p style="margin-top: 0cm; margin-bottom: 0cm"><br>
+</p>
+<p align="CENTER" style="margin-top: 0cm; margin-bottom: 0cm"><img alt="Copyright Luis A. Arce"
+	src="($resourceUri)/Orden_de_trazos.png" align="BOTTOM" width="237" border="0"><br>
+<span STYLE="font-size: 9pt;">Ventana de orden de trazos</span></p>
+<h1 style="page-break-before: always"><a NAME="_2.Significado_de_los_campos_de_los_kanjis"></a>2.Significado
+de los campos de los kanjis</h1>

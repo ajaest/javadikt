@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+SplashScreen-Image: images/splash.gif
+Main-Class: net.ajaest.jdk.core.main.Launcher
+Created-By: Luis Alfonso Arce González
+Class-Path: lib/ajaest-common-0.2.3.jar lib/jgoodies-common-1.1.1.jar lib/jgoodies-looks-2.4.0.jar lib/neodatis-odb-1.9.24.679.jar lib/xom-1.2.6.jar lib/core-renderer.jar lib/core-renderer-minimal.jar lib/iText-2.0.8.jar lib/xml-apis-xerces-2.9.1.jar
+Magic: JavaDiKt project, http://javadikt.net

@@ -1,0 +1,32 @@
+<h2><a NAME="_Referencia_de_la_variante"></a>Referencia de la variante</h2>
+Para ciertos kanjis existen otras versiones relacionadas y parecidas en forma, significado y/o lectura llamadas “variantes”. Generalmente suelen ser representaciones más antiguas del mismo kanji que con el paso del tiempo han ido simplificándose o cambiando de forma de alguna manera. Debido a esto, es bastante común que la relevancia de un kanji en el idioma moderno difiera mucho de la de sus variantes. Por ejemplo, el kanji 四 que tiene una frecuencia tan alta como 47 tiene como variante 亖, que ni siquiera está en el estándar JIS213.<br><br>
+<b>Aclaración</b>: la función de búsqueda por referencia en JavaDiKt está en proceso de desarrollo y por lo tanto no funciona todo lo bien que uno cabría esperar.<br><br>
+<b>Uso</b>: al igual que otros criterios, es necesaria la combinación de este tipo de criterio con el criterio “Tipo de variante”. Sin embargo, aquí el tipo de variante tiene que ser escrito explícitamente en el código interno que usa el programa, por lo que la calidad de la búsqueda es muy deficiente. Los tipos de variantes posibles son los siguientes:<br><br>
+<p style="margin-left: 1.25cm;">
+jis208
+jis212
+jis213
+ucs
+s_h
+nelson_c
+deroo
+njecd
+oneill
+</p><br><br>
+La utilidad principal de este tipo de información radica en encontrar las variantes del kanji usando otro criterio. Si por ejemplo un kanji especifica que tiene una variante con código JIS212 igual a 18-88, podemos usar los criterios “Código JIS” y “Juego de caracteres JIS” para encontrar dicho kanji.<br><br>
+<b>Ejemplos</b>:<br><br>
+-Buscar kanjis que tengan como variante un kanji cuyo código JIS212 sea 18-88<br><br>
+<table border="1" align="center">
+	<tr>
+		<td>-</td>
+		<td>Referencia de la variante</td>
+		<td>igual que</td>
+		<td>18-88</td>
+	</tr>
+	<tr>
+		<td>Y</td>
+		<td>Tipo de variante</td>
+		<td>igual que</td>
+		<td>jis212</td>
+	</tr>
+</table><br><br>

@@ -1,0 +1,347 @@
+1 	一 	いち 	ichi 	O 	4E00 	One 	2F00
+2 	丨 	ぼう 	bō 	O 	4E28 	Line 	2F01
+3 	丶 	てん 	ten 	O 	4E36 	Dot 	2F02
+4 	丿 	の 	no 	O 	4E3F 	Slash 	2F03
+5.1 	乙 	おつ 	otsu 	O 	4E59 	Second 	2F04
+5.2 	乚 	れ 	re 	V 	4E5A 	Second two 	2E83
+6 	亅 	はねぼう 	hanebō 	O 	4E85 	Hook 	2F05
+7 	二 	に 		ni 		O 	4E8C 	Two 	2F06
+8 	亠 	なべぶた 	nabebuta 	O 	4EA0 	Lid 	2F07
+9.1 	人 	ひと 	hito 	O 	4EBA 	Man 	2F08
+9.2 	亻 にんべん 	ninben 	L 	4EBB 	Person 	2E85
+9.3 	𠆢 ひとやね 	hitoyane  T  201A2 Person 201A2		
+10 	儿 	にんにょう,ひとあし 	ninnyō,hitoashi 	O 	513F 	Legs 	2F09
+11 	入 	いる 	iru 	O 	5165 	Enter 	2F0A
+12 	八 	はちがしら 	hachigashira 	V 	516B 	Eight 	2F0B
+13 	冂 	けいがまえ 	keigamae 	O 	5182 	Down box 	2F0C
+14 	冖 	わかんむり 	wakanmuri 	O 	5196 	Cover 	2F0D
+15 	冫 	にすい 	nisui 	O 	51AB 	Ice 	2F0E
+16.1 	几 	つくえ 	tsukue 	O 	51E0 	Table 	2F0F
+16.2 		かざがまえ 	kazagamae 	E 			
+17 	凵 	かんにょう,うけばこ 	kannyō,ukebako 	O 	51F5 	Open box 	2F10
+18.1 	刀 	かたな 	katana 	O 	5200 	Knife 	2F11
+18.2 	刂 	りっとう 	rittō 	R 	5202 	Knife two 	2E89
+19 	力 	ちから 	chikara 	O 	529B 	Power 	2F12
+20 	勺 	つつみがまえ 	tsutsumigamae 	O 	52FA 		
+21 	匕 	さじのひ 	sajinohi 	O 	5315 	Spoon 	2F14
+22 	匚 	はこがまえ 	hakogamae 	O 	531A 	Right open box 	2F15
+23 	匸 	かくしがまえ 	kakushigamae 	O 	5338 	Hiding enclosure 	2F16
+24.1 	十 	じゅう 	jū 	O 	5341 	Ten 	2F17
+24.2 		じゅうへん 	jūhen 	L 			
+25 	卜 	ぼくのと 	bokunoto 	O 	535C 	Divination 	2F18
+26.1 	卩 	ふしづくり 	fushizukuri 	O 	5369 	Seal 	2F19
+26.2 		ふしづくり 	fushizukuri 	V 			
+27 	厂 	がんだれ 	gandare 	O 	5382 	Cliff 	2F1A
+28 	厶 	む 	mu 	O 	53B6 	Private 	2F1B
+29.1 	又 	また 	mata 	O 	53C8 	Again 	2F1C
+29.2 		また 	mata 	V 			
+30 	口 	くち 	kuchi 	O 	53E3 	Mouth 	2F1D
+31 	囗 	くにがまえ 	kunigamae 	O 	56D7 	Enclosure 	2F1E
+32.1 	土 	つち 	tsuchi 	O 	571F 	Earth 	2F1F
+32.2 		つちへん 	tsuchihen 	L 			
+33 	士 	さむらい 	samurai 	O 	58EB 	Scholar 	2F20
+34.1 	夂 	ふゆがしら 	fuyugashira 	O 	5902 	Go 	2F21
+34.2 	⼡ 	なつあし 	natsuashi 	B 	2F21 		
+35 	夊 	すいにょう 	suinyō 	O 	590A 	Go slowly 	2F22
+36 	夕 	ゆうべ 	yūbe 	O 	5915 	Evening 	2F23
+37 	大 	おうきい,だい 	aōkī,dai 	O 	5927 	Big 	2F24
+38.1 	女 	おんな 	onna 	O 	5973 	Woman 	2F25
+38.2 		おんなへん 	onnahen 	L 			
+39.1 	子 	こ 	ko 	O 	5B50 	Child 	2F26
+39.2 		こへん 	kohen 	L 			
+40 	宀 	うかんむり 	ukanmuri 	O 	5B80 	Roof 	2F27
+41.1 	寸 	すん 	sun 	O 	5BF8 	Inch 	2F28
+41.2  	すんづくり 	sunzukuri 	R  		
+42.1 	小 	ちいさい 	chīsai 	O 	5C0F 	Small 	2F29
+42.2 		なおがしら 	naogashira 	T 			
+42.3 		つ 	tsu 	T 			
+43 	尢 	まげあし 	mageashi 	O 	5C22 	Lame 	2F2A
+44 	尸 	しかばね 	shikabane 	O 	5C38 	Corpse 	2F2B
+45 	屮 	てつ 	tetsu 	O 	5C6E 	Sprout 	2F2C
+46.1 	山 	やま 	yama 	O 	5C71 	Mountain 	2F2D
+46.2 		やまへん 	yamahen 	L 			
+46.3 		やまかんむり 	yamakanmuri 	T 			
+47.1 	巛 	まがりがわ 	magarigawa 	O 	5DDB 	River 	2F2E
+47.2 	川 	さんぼんがわ 	sanbongawa 	V 	5DDD 		
+48.1 	工 	たくみ 	takumi 	O 	5DE5 	Work 	2F2F
+48.2 		たくみへん 	takumihen 	L 			
+49.1 	己 	おのれ 	onore 	O 	5DF1 	Oneself 	2F30
+49.2 	巳 	み 	mi 	V 	5DF3 	Snake 	2E92
+50 	巾 	はば 	haba 	O 	5DFE 	Turban 	2F31
+51 	干 	ほす 	hosu 	O 	5E72 	Dry 	2F32
+52 	幺 	いとがしら 	itogashira 	O 	5E7A 	Short thread 	2F33
+53 	广 	まだれ 	madare 	O 	5E7F 	Dotted cliff 	2F34
+54 	廴 	えんにょう,いんにゅう 	ennyō,innyū 	O 	5EF4 	Long stride 	2F35
+55 	廾 	にじゅうあし 	nijūashi 	O 	5EFE 	Two hands 	2F36
+56 	弋 	しきがまえ 	shikigamae 	O 	5F0B 	Shoot 	2F37
+57.1 	弓 	ゆみ 	yumi 	O 	5F13 		
+57.2 	弓 	ゆみへん 	yumihen 	L 	5F13 	Bow 	2F38
+58.1 	彐 	けいがしら,いのかしら 	keigashira,inokashira 	O 	5F50 	Snout 	2F39
+58.2 		けいがしら 	keigashira 	V 			
+58.3 	彑 	けいがしら 	keigashira 	V 	5F51 	Snout one 	2E94
+59 	彡 	さんづくり 	sanzukuri 	O 	5F61 	Bristle 	2F3A
+60 	彳 	ぎょうにんべん 	gyōninben 	O 	5F73 	Step 	2F3B
+61.1 	心 	こころ 	kokoro 	O 	5FC3 	Heart 	2F3C
+61.2 	忄 	りっしんべん 	risshinben 	L 	5FC4 	Heart one 	2E96
+61.3 		したごころ 	shitagokoro 	B 			
+62 	戈 	かのほこ 	kanohoko 	O 	6208 	Halberd 	2F3D
+63.1 	戶 	とびらのと 	tobiranoto 	O 	6236 	Door 	2F3E
+63.2 	戸 	とびらのと 	tobiranoto 	E 	6238 		
+64.1 	手 	て 	te 	O 	624B 	Hand 	2F3F
+64.2 	⺙  てへん 	tehen 	L 	2E99 		
+65.1 	⺙	しんよう,じゅうまた 	shin'yō,jūmata 	O 	2E99 		
+65.2 	支 	しんよう,じゅうまた 	shin'yō,jūmata 	R 	652F 	Branch 	2F40
+66.1 	攴 	ぼくづくり,とまた 	bokuzukuri,tomata 	O 	6534 	Rap 	2F41
+66.2 	攵 	のぶん 	nobun 	R 	6535 		
+67.1 		ぶん,ぶんにょう 	bun,bunnyō 	O 			
+67.2 	文 	ぶん,ぶんにょう 	bun,bunnyō 	V 	6587 	Script 	2F42
+68 	斗 	とます 	tomasu 	O 	6597 	Dipper 	2F43
+69 	斤 	おの 	ono 	O 	65A4 	Axe 	2F44
+70 	方 	かた 	kata 	O 	65B9 	Square 	2F45
+71.1 	无 	むにょう 	munyō 	O 	65E0 	Not 	2F46
+71.2 	旡 	すでのつくり 	sudenotsukuri 	R 	65E1 		
+71.3 		すでのつくり 	sudenotsukuri 	R 			
+72.1 		ひ 	hi 	O 			
+72.2 	日 	ひ 	hi 	V 	65E5 	Sun 	2F47
+73.1 	曰 	ひらび 	hirabi 	O 	66F0 	Say 	2F48
+73.2 		ひらび 	hirabi 	V 			
+74.1 		つき 	tsuki 	O 			
+74.2 	月 	つき 	tsuki 	V 	6708 	Moon 	2F49
+74.3 		つき 	tsuki 	V 			
+75.1 	木 	き 	ki 	O 	6728 	Tree 	2F4A
+75.2 		きへん 	kihen 	L 			
+76 	欠 	あくび 	akubi 	O 	6B20 	Lack 	2F4B
+77.1 	止 	とめる 	tomeru 	O 	6B62 	Stop 	2F4C
+77.2 		とめへん 	tomehen 	L 			
+78 	歹 	がつへん 	gatsuhen 	O 	6B79 	Death 	2F4D
+79 	殳 	るまた,ほこづくり 	rumata,hokozukuri 	O 	6BB3 	Weapon 	2F4E
+80.1 	毋 	はは,なかれ 	haha,nakare 	O 	6BCB 	Do not 	2F4F
+80.2 	毌 	はは,なかれ 	haha,nakare 	V 	6BCC 		
+80.3 	母 	はは,なかれ 	haha,nakare 	O 	6BCD 	Mother 	2E9F
+81 	比 	くらべる,ひ 	kuraberu,hi 	O 	6BD4 	Compare 	2F50
+82 	毛 	け 	ke 	O 	6BDB 	Fur 	2F51
+83 	氏 	うじ 	uji 	O 	6C0F 	Clan 	2F52
+84 	气 	きがまえ 	kigamae 	O 	6C14 	Steam 	2F53
+85.1 	水 	みず 	mizu 	O 	6C34 	Water 	2F54
+85.2 	氵 	さんずい 	sanzui 	L 	6C35 		
+85.3 	氺 	したみず 	shitamizu 	B 	6C3A 		
+86.1 	火 	ひ 	hi 	O 	706B 	Fire 	2F55
+86.2 		ひへん 	hihen 	L 			
+86.3 	灬 	れっか 	rekka 	B 	706C 		
+87.1 	爪 	つめ 	tsume 	O 	722A 	Claw 	2F56
+87.2 		のつ 	notsu 	T 			
+87.3 	爫 	つめかんむり 	tsumekanmuri 	T 	722B 		
+88.1 	父 	ちち 	chichi 	O 	7236 	Father 	2F57
+89.1 	爻 	めめ 	meme 	O 	723B 	Double x 	2F58
+89.2 		めめ 	meme 	V 			
+90 	爿 	しょうへん 	shōhen 	O 	723F 	Half tree trunk 	2F59
+91 	片 	かた 	kata 	O 	7247 	Slice 	2F5A
+92 	牙 	きば 	kiba 	O 	7259 	Fang 	2F5B
+93.1 	牛 	うし 	ushi 	O 	725B 	Cow 	2F5C
+93.2 	牜 	うしへん 	ushihen 	L 	725C 		
+94.1 	犬 	いぬ 	inu 	O 	72AC 	Dog 	2F5D
+94.2 	犭 	けものへん 	kemonohen 	L 	72AD 		
+95 	玄 	げん 	gen 	O 	7384 	Profound 	2F5E
+96.1 	玉 	たま 	tama 	O 	7389 	Jade 	2F5F
+96.2 		たまへん 	tamahen 	L 			
+97 	瓜 	うり 	uri 	O 	74DC 	Melon 	2F60
+98 	瓦 	かわら 	kawara 	O 	74E6 	Tile 	2F61
+99 	甘 	あまい 	amai 	O 	7518 	Sweet 	2F62
+100 	生 	うまれる 	umareru 	O 	751F 	Life 	2F63
+101 	用 	もちいる 	mochīru 	O 	7528 	Use 	2F64
+102 	田 	た 	ta 	O 	7530 	Field 	2F65
+103.1 	疋 	ひき 	hiki 	O 	758B 	Bolt of cloth 	2F66
+103.2 		ひきへん 	hikihen 	L 			
+104 	疒 	やまいだれ 	yamaidare 	O 	7592 	Sickness 	2F67
+105 	癶 	はつがしら 	hatsugashira 	O 	7676 	Dotted tent 	2F68
+106 	白 	しろ 	shiro 	O 	767D 	White 	2F69
+107 	皮 	けがわ 	kegawa 	O 	76AE 	Skin 	2F6A
+108 	皿 	さら 	sara 	O 	76BF 	Dish 	2F6B
+109 	目 	め 	me 	O 	76EE 	Eye 	2F6C
+110 	矛 	ほこ 	hoko 	O 	77DB 	Spear 	2F6D
+111 	矢 	や 	ya 	O 	77E2 	Arrow 	2F6E
+111.2 		やへん 	yahen 	L 			
+112.1 	石 	いし 	ishi 	O 	77F3 	Stone 	2F6F
+112.2 		いしへん 	ishihen 	L 			
+113.1 	示 	しめす 	shimesu 	O 	793A 	Spirit 	2F70
+113.2 	礻 	ねへん,しめすへん 	nehen,shimesuhen 	L 	793B 		
+113.3 		しめすへん 	shimesuhen 	L 			
+114 	禸 	ぐうのあし 	gūnoashi 	O 	79B8 	Track 	2F71
+115.1 	禾 	のぎ 	nogi 	O 	79BE 	Grain 	2F72
+115.2 		のぎへん 	nogihen 	L 			
+116.1 	穴 	あな 	ana 	O 	7A74 	Cave 	2F73
+116.2 		あなかんむり 	anakanmuri 	T 			
+117.1 	立 	たつ 	tatsu 	O 	7ACB 	Stand 	2F74
+117.2 		たつへん 	tatsuhen 	L 			
+118.1 	竹 	たけ 	take 	O 	7AF9 	Bamboo 	2F75
+118.2 	⺮ 	たけかんむり 	takekanmuri 	T 	2EAE 		
+119.1 	米 	こめ 	kome 	O 	7C73 	Rice 	2F76
+119.2 		こめへん 	komehen 	L 			
+120.1 	糸 	いと 	ito 	O 	7CF8 	Silk 	2F77
+120.2 		いとへん 	itohen 	L 			
+121 	缶 	ほとぎ 	hotogi 	O 	7F36 	Jar 	2F78
+122.1 	网 	あみがしら 	amigashira 	O 	7F51 	Net 	2F79
+122.2 	罒 	よんかしら 	yonkashira 	T 	7F52 	Net two 	2EB2
+122.3 		よんかしら 	yonkashira 	T 			
+123.1 	羊 	ひつじ 	hitsuji 	O 	7F8A 	Sheep 	2F7A
+123.2 		ひつじかんむり 	hitsujikanmuri 	T 			
+123.3 		ひつじへん 	hitsujihen 	L 			
+124.1 		はね 	hane 	O 			
+124.2 	羽 	はね 	hane 	V 	7FBD 	Feather 	2F7B
+125.1 	老 	おい 	oi 	O 	8001 	Old 	2F7C
+125.2 	耂 	おいかんむり,おいがしら 	oikanmuri,oigashira 	T 	8002 	Old 	2EB9
+126 	而 	しかして 	shikashite 	O 	800C 	And 	2F7D
+127.1 	耒 	らいすき 	raisuki 	O 	8012 	Plow 	2F7E
+127.2 		らいへん 	raihen 	L 			
+127.3 		すきへん 	sukihen 	L 			
+128.1 	耳 	みみ 	mimi 	O 	8033 	Ear 	2F7F
+128.2 		みみへん 	mimihen 	L 			
+129 	聿 	ふでづくり 	fudezukuri 	O 	807F 	Brush 	2F80
+130.1 	肉 	にく 	niku 	O 	8089 	Meat 	2F81
+130.2 		にくずき 	nikuzuki 	V 			
+130.3 		つき 	tsuki 	V 			
+131 	臣 	しん 	shin 	L 	81E3 	Minister 	2F82
+132 	自 	みずから 	mizukara 	O 	81EA 	Self 	2F83
+133 	至 	いたる 	itaru 	O 	81F3 	Arrive 	2F84
+134 	臼 	うす 	usu 	O 	81FC 	Mortar 	2F85
+135.1 	舌 	した 	shita 	O 	820C 	Tongue 	2F86
+135.2 		したへん 	shitahen 	L 			
+136.1 	舛 	ます 	masu 	O 	821B 	Oppose 	2F87
+136.2 		まいあし 	maiashi 	B 			
+137.1 	舟 	ふね 	fune 	O 	821F 	Boat 	2F88
+137.2 		ふねへん 	funehen 	L 			
+138 	艮 	ねづくり,うしとら 	nezukuri,ushitora 	O 	826E 	Stopping 	2F89
+139.1 	色 	いろ 	iro 	O 	8272 	Color 	2F8A
+139.2 		いろづくり 	irozukuri 	R 			
+140.1 	艸 	くさ 	kusa 	O 	8278 	Grass 	2F8B
+140.2 		くさかんむり,そうこう 	kusakanmuri,sōkō 	T 			
+140.3 		くさかんむり,そうこう 	kusakanmuri,sōkō 	T 			
+141 	虍 	とらかんむり 	torakanmuri 	O 	864D 	Tiger 	2F8C
+142.1 	虫 	むし 	mushi 	O 	866B 	Insect 	2F8D
+142.2 		むしへん 	mushihen 	L 			
+143.1 	血 	ち 	chi 	O 	8840 		
+143.2 	血 	ちへん 	chihen 	L 	8840 	Blood 	2F8E
+144.1 	行 	ぎょう 	gyō 	O 	884C 	Walk enclosure 	2F8F
+144.2 		ぎょうがまえ 	gyōgamae 	E 			
+145.1 	衣 	ころも 	koromo 	O 	8863 	Clothes 	2F90
+145.2 	衤 	ころもへん 	koromohen 	L 	8864 	Clothes 	2EC2
+145.3 		ころも 	koromo 	V 			
+146.1 	西 	にし 	nishi 	O 	897F 	West two 	2EC4
+146.2 	襾 	にし 	nishi 	O 	897E 	West 	2F91
+146.3 	覀 	にし 	nishi 	T 	8980 	West one 	2EC3
+147 	見 	みる 	miru 	O 	898B 	See 	2F92
+148.1 	角 	つの 	tsuno 	O 	89D2 	Horn 	2F93
+148.2 		つのへん 	tsunohen 	L 			
+149.1 	言 	ことば 	kotoba 	O 	8A00 	Speech 	2F94
+149.2 		ごんべん 	gonben 	L 			
+150.1 	谷 	たに 	tani 	O 	8C37 	Valley 	2F95
+150.2 		たにへん 	tanihen 	L 			
+151.1 	豆 	まめ 	mame 	O 	8C46 	Bean 	2F96
+151.2 		まめへん 	mamehen 	L 			
+152.1 	豕 	いのこ 	inoko 	O 	8C55 	Pig 	2F97
+152.2 		いのこへん 	inokohen 	V 			
+153 	豸 	むじな 	mujina 	O 	8C78 	Badger 	2F98
+154.1 	貝 	かい 	kai 	O 	8C9D 	Shell 	2F99
+154.2 		かいへん 	kaihen 	V 			
+155.1 	赤 	あか 	aka 	O 	8D64 	Red 	2F9A
+155.2 		あかへん 	akahen 	L 			
+156.1 	走 	はしる 	hashiru 	O 	8D70 	Run 	2F9B
+156.2 		そうにょう 	sōnyō 	E 			
+157.1 	足 	あし 	ashi 	O 	8DB3 	Foot 	2F9C
+157.2 		あしへん 	ashihen 	L 			
+158.1 	身 	み 	mi 	O 	8EAB 	Body 	2F9D
+158.2 		みへん 	mihen 	L 			
+159.1 	車 	くるま 	kuruma 	O 	8ECA 	Cart 	2F9E
+159.2 		くるまへん 	kurumahen 	L 			
+160.1 	辛 	からい 	karai 	O 	8F9B 	Bitter 	2F9F
+160.2 		からい 	karai 	L 			
+161 	辰 	しんのたつ 	shinnotatsu 	O 	8FB0 	Morning 	2FA0
+162.1 	辵 	しんにょう,しんにゅう 	shinnyō,shinnyū 	O 	8FB5 	Walk 	2FA1
+162.2 	辶 	しんにょう,しんにゅう 	shinnyō,shinnyū 	E 	8FB6 	Walk two 	2ECE
+162.3 		しんにょう,しんにゅう 	shinnyō,shinnyū 	E 			
+163.1 	邑 	むら 	mura 	O 	9091 	City 	2FA2
+163.2 		おおざと 	ōzato 	R 			
+164.1 	酉 	ひよみのとり 	hiyominotori 	O 	9149 	Wine 	2FA3
+164.2 		とりへん 	torihen 	L 			
+165.1 	釆 	のごめ 	nogome 	O 	91C6 	Distinguish 	2FA4
+165.2 		のごめへん 	nogomehen 	L 			
+166.1 	里 	さと 	sato 	O 	91CC 	Village 	2FA5
+166.2 		さとへん 	satohen 	L 			
+167.1 	金 	かね 	kane 	O 	91D1 	Gold 	2FA6
+167.2 		かねへん 	kanehen 	L 			
+168.1 	長 	ながい 	nagai 	O 	9577 	Long 	2FA7
+168.2 	镸 	ながい 	nagai 	L 	9578 	Long two 	2ED2
+169 	門 	もん,もんがまえ 	mon,mongamae 	O 	9580 	Gate 	2FA8
+170.1 	阜 	ぎふのふ 	gifunofu 	O 	961C 	Mound 	2FA9
+170.2 	阝 	こざとへん 	kozatohen 	L 	961D 	Mound two 	2ED6
+171 	隶 	れいづくり 	reizukuri 	O 	96B6 	Slave 	2FAA
+172 	隹 	ふるとり 	furutori 	O 	96B9 	Short tailed bird 	2FAB
+173.1 	雨 	あめ 	ame 	O 	96E8 	Rain 	2FAC
+173.2 		あめかんむり 	amekanmuri 	T 			
+174.1 	靑 	あお 	ao 	O 	9751 	Blue 	2FAD
+174.2 	青 	あお 	ao 	V 	9752 	Blue 	2ED8
+175 	非 	あらず 	arazu 	O 	975E 	Wrong 	2FAE
+176 	面 	めん 	men 	O 	9762 	Face 	2FAF
+177.1 	革 	かわ 	kawa 	O 	9769 	Leather 	2FB0
+177.2 		かわへん 	kawahen 	L 			
+178 	韋 	なめしがわ 	nameshigawa 	V 	97CB 	Tanned leather 	2FB1
+179 	韭 	にら 	nira 	O 	97ED 	Leek 	2FB2
+180.1 		おと 	oto 	O 			
+180.2 	音 	おと 	oto 	V 	97F3 	Sound 	2FB3
+181 	頁 	おうがい 	aōgai 	O 	9801 	Leaf 	2FB4
+182.1 	風 	かぜ 	kaze 	O 	98A8 	Wind 	2FB5
+182.2 		かぜ 	kaze 	L 			
+183 	飛 	とぶ 	tobu 	O 	98DB 	Fly 	2FB6
+184.1 	食 	しょく 	shoku 	O 	98DF 		
+184.2 	飠 	しょくへん 	shokuhen 	L 	98E0 	Eat three 	2EDF
+184.3 		しょくへん 	shokuhen 	L 			
+184.4 	食 	しょく 	shoku 	V 	98DF 	Eat 	2FB7
+185 	首 	くび 	kubi 	O 	9996 	Head 	2FB8
+186 	香 	においこう 	nioikō 	O 	9999 	Fragrant 	2FB9
+187.1 	馬 	うま 	uma 	O 	99AC 	Horse 	2FBA
+187.2 		うまへん 	umahen 	L 			
+188.1 	骨 	ほね 	hone 	O 	9AA8 	Bone 	2FBB
+188.2 		ほねへん 	honehen 	L 			
+189 	高 	たかい 	takai 	O 	9AD8 	Tall 	2FBC
+190 	髟 	かみかんむり 	kamikanmuri 	O 	9ADF 	Hair 	2FBD
+191 	鬥 	とうがまえ 	tōgamae 	O 	9B25 	Fight 	2FBE
+192 	鬯 	ちょう 	chō 	O 	9B2F 	Sacrificial wine 	2FBF
+193.1 	鬲 	かく 	kaku 	O 	9B32 	Cauldron 	2FC0
+193.2 		かく 	kaku 	V 			
+194.1 	鬼 	おに 	oni 	O 	9B3C 	Ghost 	2FC1
+194.2 		きにょう 	kinyō 	E 			
+195.1 	魚 	うお 	uo 	O 	9B5A 	Fish 	2FC2
+195.2 		うおへん 	uohen 	L 			
+196.1 	鳥 	とり 	tori 	O 	9CE5 	Bird 	2FC3
+196.2 		とり 	tori 	R 			
+197 	鹵 	ろ 	ro 	O 	9E75 	Salt 	2FC4
+198 	鹿 	しか 	shika 	O 	9E7F 	Deer 	2FC5
+199.1 	麥 	ばく 	baku 	O 	9EA5 	Wheat 	2FC6
+199.2 	麦 	ばく 	baku 	O 	9EA6 	Simplified wheat 	2EE8
+199.3 		ばくにょう 	bakunyō 	E 			
+200.1 	麻 	あさ 	asa 	O 	9EBB 	Hemp 	2FC7
+200.2 		あさかんむり 	asakanmuri 	E 			
+200.3 		あさかんむり 	asakanmuri 	E 			
+201.1 	黄 	きいろ 	kīro 	O 	9EC4 	Simplified yellow 	2EE9
+201.2 	黃 	きいろ 	kīro 	O 	9EC3 	Yellow 	2FC8
+202 	黍 	きび 	kibi 	O 	9ECD 	Millet 	2FC9
+203.1 	黑 	くろい 	kuroi 	O 	9ED1 	Black 	2FCA
+203.2 	黒 	くろい 	kuroi 	V 	9ED2 		
+204 	黹 	ふつ 	futsu 	O 	9EF9 	Embroidery 	2FCB
+205 	黽 	べん 	ben 	O 	9EFD 	Frog 	2FCC
+206 	鼎 	かなえ 	kanae 	O 	9F0E 	Tripod 	2FCD
+207 	鼓 	つずみ 	tsuzumi 	O 	9F13 	Drum 	2FCE
+208.1 	鼠 	ねずみ 	nezumi 	O 	9F20 	Rat 	2FCF
+208.2 		ねずみにょう 	nezuminyō 	E 			
+209.1 	鼻 	はな 	hana 	O 	9F3B 	Nose 	2FD0
+209.2 		はな 	hana 	O 			
+209.3 		はなへん 	hanahen 	L 			
+210.1 	齊 	せい 	sei 	O 	9F4A 	Even 	2FD1
+210.2 	斉 	せい 	sei 	V 	6589 	J-simplified even 	2EEB
+211.1 	齒 	は 	ha 	O 	9F52 	Tooth 	2FD2
+211.2 		はへん 	hahen 	L 			
+211.3 	歯 	は 	ha 	V 	6B6F 	J-simplified tooth 	2EED
+212.1 	龍 	たつ 	tatsu 	O 	9F8D 	Dragon 	2FD3
+212.2 	竜 	たつ 	tatsu 	O 	7ADC 		
+213.1 	龜 	かめ 	kame 	O 	9F9C 	Turtle 	2FD4
+214		龠 	やく		yaku	O	9FA0		flute	2FD5

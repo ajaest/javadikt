@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleName</key>
+	<string>JavaDiKt</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.ajaest.lib.util.mac.tools.MacJarLauncher</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.6</string>
+	<key>CFBundleAllowMixedLocalizations</key>
+	<string>true</string>
+	<key>CFBundleExecutable</key>
+	<string>JavaApplicationStub</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>Spanish</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.6beta</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleGetInfoString</key>
+	<string>The Definitive Kanji Dictionary</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIconFile</key>
+	<string>3.0.icns</string>
+	<key>Java</key>
+	<dict>
+		<key>MainClass</key>
+		<string>net.ajaest.lib.util.tools.mac.MacJarLauncher</string>
+		<key>JVMVersion</key>
+		<string>1.5+</string>
+		<key>Arguments</key>
+		<string>java -Xmx256m -jar javadikt.jar</string>
+		<key>ClassPath</key>
+			<string>$JAVAROOT/</string>
+	</dict>
+</dict>
+</plist>

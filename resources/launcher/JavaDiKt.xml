@@ -1,0 +1,39 @@
+<launch4jConfig>
+  <dontWrapJar>true</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>javadikt.jar</jar>
+  <outfile>/home/ajaest11/Codigo/JavaDiKt/resources/launcher/JavaDiKt.exe</outfile>
+  <errTitle>Falta la maquina virtual de Java</errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>true</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon>/home/ajaest11/Codigo/JavaDiKt/resources/icon/3.0/3.0.ico</icon>
+  <singleInstance>
+    <mutexName>JavaDiKt</mutexName>
+    <windowTitle></windowTitle>
+  </singleInstance>
+  <jre>
+    <path></path>
+    <minVersion>1.5.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <maxHeapSize>256</maxHeapSize>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.1.6.0</fileVersion>
+    <txtFileVersion>1.1.6</txtFileVersion>
+    <fileDescription>JavaDiKt, the definitive kanji dictionary</fileDescription>
+    <copyright>Luis Alfonso Arce Gonzalez</copyright>
+    <productVersion>1.1.6.0</productVersion>
+    <txtProductVersion>1.1.6beta</txtProductVersion>
+    <productName>JavaDiKt</productName>
+    <companyName>javadikt.net</companyName>
+    <internalName>Mirai</internalName>
+    <originalFilename>JavaDiKt.exe</originalFilename>
+  </versionInfo>
+</launch4jConfig>
